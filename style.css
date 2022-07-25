@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+input, select {
+    margin-bottom: 15px;
+}
+
+table {
+    margin-left: 10px;
+    height: 1rem;
+}
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+th { 
+    padding: 2px 15px;
+}
