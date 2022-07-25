@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC - Formulário</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <form onsubmit="submitForm()"> 
+        <label for="name">Qual o seu nome?</label>
+        <input type="text" name="name" id="name" required>
+        <label for="rate">Qual nota você daria para o curso da EBAC?</label>
+        <select name="rate" id="rate">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected>5</option>
+        </select>
+        <label for="recommend">Recomendaria este curso?</label>
+        <div>
+            <input type="radio" name="recommend" id="recommend" value="true" checked>Sim
+            <input type="radio" name="recommend" id="recommend" value="false">Não
+        </div>
+        <p>O que você está gostando de aprender?</p>
+        <div>
+            <input type="checkbox" id="html" name="html" value="HTML">
+            <label for="html">HTML</label>
+        </div>
+        <div>
+            <input type="checkbox" id="css" name="css" value="CSS">
+            <label for="css">CSS</label>
+        </div>
+        <div>
+            <input type="checkbox" id="javascript" name="javascript" value="Javascript">
+            <label for="javascript"> Javascript</label>
+        </div>
+        <button type="submit" id='submitButton'>Enviar</button>
+    </form>
+
+    <table>
+        <tr>
+                <th>Nome</th>
+                <th>Avaliação (1 a 5)</th>
+                <th>Recomendaria</th>
+                <th>O que está gostando</th>
+            
+        </tr>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html> 
